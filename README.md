@@ -20,16 +20,17 @@ apt upgrade
 [ Unprivileged NFS read/write from NAS to LXC container ]
 Proxmox Host node:
 
-create mountpoint;
-	#mkdir /mnt/pve/TITANshare
-	check nfs access
-	#apt install nfs-common
-	add to fstab
+create mountpoint:
+
+#mkdir /mnt/pve/TITANshare
+check nfs access
+#apt install nfs-common
+add to fstab
 		
-		10.0.0.133:/mnt/TITAN/Titan_Media /mnt/pve/TITANshare nfs defaults 0 0
-	reload node 
-	#systemctl daemon-reload
-	#mount -a
+10.0.0.133:/mnt/TITAN/Titan_Media /mnt/pve/TITANshare nfs defaults 0 0
+reload node 
+#systemctl daemon-reload
+#mount -a
 	
 	--> At this point, read write access is available from NAS share to ProxMox Host Node
 	
