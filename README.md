@@ -77,9 +77,15 @@ Portainer-agent - LXC_IP:9001
 
 NodeExporter - LXC_IP::9100
 
-https://github.com/grimolddude/docker.git
+target work directory;
+
+git clone https://github.com/grimolddude/docker.git
 
 Core deploy complete ------------------ > Clone into required sub containers
+
+Remember: Change each LXC container IP address through Host Node UI
+
+Housekeeping: add each container to Portainer to make sure Watchtower works properly
 
 		> From here, deploy each service per container
 		
