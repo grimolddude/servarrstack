@@ -63,9 +63,9 @@ edit line 14, 15, 27
 sh 00-bootstrap.sh 
 
 set user account
-
+su - user
 change password
-#
+passwd user "X"
 
 run script:
 
